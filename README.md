@@ -1,4 +1,130 @@
-﻿# List of All Spotify Genres
-taken from https://everynoise.com/everynoise1d.cgi?scope=all
+﻿# Spotify Genres Database
 
-Here is an array, and a text file of every spotify genre listed on everynoise.com. I hope this can be useful to someone!
+A comprehensive collection of **6,044 Spotify music genres** sourced from [Every Noise at Once](https://everynoise.com/everynoise1d.cgi?scope=all), available in 12 different formats for seamless integration into any project.
+
+## Overview
+
+This repository contains every Spotify genre available on everynoise.com, formatted for immediate use across different programming languages, databases, and data analysis tools. Whether you're building a music app, conducting genre analysis, or need genre data for machine learning, we've got you covered.
+
+## Available Formats
+
+| Format | File | Description | Size |
+|--------|------|-------------|------|
+| **JavaScript** | `genres.js` | JS variable assignment | 118KB |
+| **JSON** | `genres.json` | Standard JSON array | 118KB |
+| **TypeScript** | `genres.ts` | Typed array export | 118KB |
+| **CSV** | `genres.csv` | Comma-separated values | 88KB |
+| **Plain Text** | `genres.txt` | One genre per line | 88KB |
+| **SQL** | `genres.sql` | CREATE TABLE + INSERT statements | 371KB |
+| **Python** | `genres.py` | Python list | 130KB |
+| **PHP** | `genres.php` | PHP array | 130KB |
+| **Ruby** | `genres.rb` | Ruby array | 118KB |
+| **Go** | `genres.go` | Go string slice | 112KB |
+| **YAML** | `genres.yml` | YAML array | 124KB |
+| **XML** | `genres.xml` | XML document | 189KB |
+| **Markdown** | `genres.md` | Numbered list | 123KB |
+
+## Quick Start
+
+### JavaScript/Node.js
+```javascript
+const genres = require('./genres.js');
+console.log(genres.length); // 6044
+console.log(genres[0]); // "pop"
+```
+
+### TypeScript
+```typescript
+import { genres } from './genres';
+const randomGenre: string = genres[Math.floor(Math.random() * genres.length)];
+```
+
+### Python
+```python
+from genres import genres
+print(f"Total genres: {len(genres)}")
+print(f"First genre: {genres[0]}")
+```
+
+### SQL
+```bash
+# MySQL/MariaDB
+mysql -u username -p database_name < genres.sql
+
+# PostgreSQL
+psql -U username -d database_name -f genres.sql
+
+# SQLite
+sqlite3 mydatabase.db < genres.sql
+```
+
+### CSV (Excel, Google Sheets, Pandas)
+```python
+import pandas as pd
+df = pd.read_csv('genres.csv')
+```
+
+### PHP
+```php
+<?php
+require 'genres.php';
+echo "Total genres: " . count($genres);
+```
+
+### Ruby
+```ruby
+require_relative 'genres'
+puts "Total genres: #{genres.length}"
+```
+
+### Go
+```go
+package main
+import "fmt"
+
+func main() {
+    fmt.Printf("Total genres: %d\n", len(genres))
+}
+```
+
+## Use Cases
+
+- **Music Applications**: Genre selection dropdowns, filters, and search
+- **Data Analysis**: Music trend analysis, genre clustering, recommendation systems
+- **Machine Learning**: Training data for genre classification models
+- **APIs**: RESTful endpoints serving genre lists
+- **Databases**: Pre-populate genre tables for music platforms
+- **Testing**: Mock data for music-related unit tests
+- **Research**: Academic studies on music categorization
+
+## Genre Examples
+
+The dataset includes a wide variety of genres:
+- Mainstream: `pop`, `rock`, `hip hop`, `country`, `edm`
+- Regional: `k-pop`, `urbano latino`, `musica mexicana`, `filmi`
+- Subgenres: `dance pop`, `melodic rap`, `indie pop`, `tropical house`
+- Niche: `baroque brass`, `himene tarava`, `yunnan traditional`
+
+## Data Source
+
+All genres are sourced from [Every Noise at Once](https://everynoise.com/everynoise1d.cgi?scope=all), an ongoing attempt at an algorithmically-generated, readability-adjusted scatter-plot of the musical genre-space, based on data tracked and analyzed by Spotify.
+
+## Stats
+
+- **Total Genres**: 6,044
+- **Format Options**: 12
+- **Last Updated**: May 2026
+- **Data Source**: everynoise.com
+
+## Contributing
+
+Found a missing genre or format you'd like to see? Feel free to open an issue or submit a pull request!
+
+## License
+
+This data is publicly sourced from Every Noise at Once. Please respect Spotify's terms of service when using this data in commercial applications.
+
+## Acknowledgments
+
+- Data sourced from [Every Noise at Once](https://everynoise.com) by Glenn McDonald
+- Powered by Spotify's genre classification system
