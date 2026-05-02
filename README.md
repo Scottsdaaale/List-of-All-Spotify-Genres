@@ -109,7 +109,7 @@ The dataset includes a wide variety of genres:
 
 ## Data Source
 
-All genres are sourced from [Every Noise at Once](https://everynoise.com/everynoise1d.cgi?scope=all), an ongoing attempt at an algorithmically-generated, readability-adjusted scatter-plot of the musical genre-space, based on data tracked and analyzed by Spotify.
+All genres are sourced from [Every Noise at Once](https://www.everynoise.com/), an ongoing attempt at an algorithmically-generated, readability-adjusted scatter-plot of the musical genre-space, based on data tracked and analyzed by Spotify.
 
 ## Stats
 
