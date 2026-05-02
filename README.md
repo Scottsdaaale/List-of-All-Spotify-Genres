@@ -1,6 +1,6 @@
 ﻿# Spotify Genres Database
 
-A comprehensive collection of **6,044 Spotify music genres** sourced from [Every Noise at Once](https://everynoise.com/everynoise1d.cgi?scope=all), available in 12 different formats for seamless integration into any project.
+A comprehensive collection of **6,044 Spotify music genres** sourced from [Every Noise at Once](https://www.everynoise.com/), available in 12 different formats for seamless integration into any project.
 
 ## Overview
 
