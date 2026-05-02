@@ -10,37 +10,39 @@ This repository contains every Spotify genre available on everynoise.com, format
 
 | Format | File | Description | Size |
 |--------|------|-------------|------|
-| **JavaScript** | `genres.js` | JS variable assignment | 118KB |
-| **JSON** | `genres.json` | Standard JSON array | 118KB |
-| **TypeScript** | `genres.ts` | Typed array export | 118KB |
-| **CSV** | `genres.csv` | Comma-separated values | 88KB |
-| **Plain Text** | `genres.txt` | One genre per line | 88KB |
-| **SQL** | `genres.sql` | CREATE TABLE + INSERT statements | 371KB |
-| **Python** | `genres.py` | Python list | 130KB |
-| **PHP** | `genres.php` | PHP array | 130KB |
-| **Ruby** | `genres.rb` | Ruby array | 118KB |
-| **Go** | `genres.go` | Go string slice | 112KB |
-| **YAML** | `genres.yml` | YAML array | 124KB |
-| **XML** | `genres.xml` | XML document | 189KB |
-| **Markdown** | `genres.md` | Numbered list | 123KB |
+| **JavaScript** | `formats/genres.js` | JS variable assignment | 118KB |
+| **JSON** | `formats/genres.json` | Standard JSON array | 118KB |
+| **TypeScript** | `formats/genres.ts` | Typed array export | 118KB |
+| **CSV** | `formats/genres.csv` | Comma-separated values | 88KB |
+| **Plain Text** | `formats/genres.txt` | One genre per line | 88KB |
+| **SQL** | `formats/genres.sql` | CREATE TABLE + INSERT statements | 371KB |
+| **Python** | `formats/genres.py` | Python list | 130KB |
+| **PHP** | `formats/genres.php` | PHP array | 130KB |
+| **Ruby** | `formats/genres.rb` | Ruby array | 118KB |
+| **Go** | `formats/genres.go` | Go string slice | 112KB |
+| **YAML** | `formats/genres.yml` | YAML array | 124KB |
+| **XML** | `formats/genres.xml` | XML document | 189KB |
+| **Markdown** | `formats/genres.md` | Numbered list | 123KB |
 
 ## Quick Start
 
 ### JavaScript/Node.js
 ```javascript
-const genres = require('./genres.js');
+const genres = require('./formats/genres.js');
 console.log(genres.length); // 6044
 console.log(genres[0]); // "pop"
 ```
 
 ### TypeScript
 ```typescript
-import { genres } from './genres';
+import { genres } from './formats/genres';
 const randomGenre: string = genres[Math.floor(Math.random() * genres.length)];
 ```
 
 ### Python
 ```python
+import sys
+sys.path.append('formats')
 from genres import genres
 print(f"Total genres: {len(genres)}")
 print(f"First genre: {genres[0]}")
@@ -49,31 +51,31 @@ print(f"First genre: {genres[0]}")
 ### SQL
 ```bash
 # MySQL/MariaDB
-mysql -u username -p database_name < genres.sql
+mysql -u username -p database_name < formats/genres.sql
 
 # PostgreSQL
-psql -U username -d database_name -f genres.sql
+psql -U username -d database_name -f formats/genres.sql
 
 # SQLite
-sqlite3 mydatabase.db < genres.sql
+sqlite3 mydatabase.db < formats/genres.sql
 ```
 
 ### CSV (Excel, Google Sheets, Pandas)
 ```python
 import pandas as pd
-df = pd.read_csv('genres.csv')
+df = pd.read_csv('formats/genres.csv')
 ```
 
 ### PHP
 ```php
 <?php
-require 'genres.php';
+require 'formats/genres.php';
 echo "Total genres: " . count($genres);
 ```
 
 ### Ruby
 ```ruby
-require_relative 'genres'
+require_relative 'formats/genres'
 puts "Total genres: #{genres.length}"
 ```
 
